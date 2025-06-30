@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+
+<body>
+<div class="container">
+  <h2>Please Enter your Details</h2>
+        <form method="post">
+          {% csrf_token %}
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+            <label for="last-name">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="straddr">Address:</label>
+            <input type="text" id="straddr" name="straddr" required><br>
+            <label for="towncity">Town/City:</label>
+            <input type="text" id="towncity" name="towncity" required><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br>
+            <label for="pin">PIN Code:</label>
+            <input type="text" id="pin" name="pin" required><br>
+            <label for="telno">Mobile No. :</label><br>
+            <input type="tel" id="telno" name="telno" required><br>
+  
+            <input type="submit" value="Submit">
+          </form>
+</div>
+</body>
+</html>

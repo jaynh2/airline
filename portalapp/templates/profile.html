@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>User Profile Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="profile">
+            <label for="firstName">First Name</label>
+            <div class="field" id="firstName">{{ user.fname }}</div>
+
+            <label for="lastName">Last Name</label>
+            <div class="field" id="lastName">{{ user.lname }}</div>
+
+            <label for="dob">Date of Birth</label>
+            <div class="field" id="dob">{{ user.dob }}</div>
+
+            <label for="address">Address</label>
+            <div class="field" id="address">{{ user.addr }}</div>
+
+            <label for="city">City</label>
+            <div class="field" id="city">{{ user.towncity }}</div>
+
+            <label for="state">State</label>
+            <div class="field" id="state">{{ user.state }}</div>
+
+            <label for="country">Country</label>
+            <div class="field" id="country">{{ user.country }}</div>
+
+            <label for="zip">Zip Code</label>
+            <div class="field" id="zip">{{ user.pin }}</div>
+
+            <label for="phone">Phone Number</label>
+            <div class="field" id="phone">{{ user.telno }}</div>
+
+            <label for="email">Email</label>
+            <div class="field" id="email">{{ user.email }}</div>
+        </div>
+    </div>
+</body>
+</html>
+

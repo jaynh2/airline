@@ -1,0 +1,78 @@
+body {
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+    url("bglogin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding-left: 30px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px ;
+  margin-left: 10px ;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 450px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  color: green;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 17px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  color: green;
+  background-color: #d6d5d5;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.country-code input {
+  width: 60px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.error {
+  color: red;
+  font-size: 120%;
+  margin-bottom: 10px;
+}

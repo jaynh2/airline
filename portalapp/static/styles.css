@@ -1,0 +1,139 @@
+body {
+    background-image: url("bgind2.jpeg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+  }
+
+  .flight-search {
+    padding: 20px;
+    margin-left: 0px;
+    border-radius: 10px;
+  }
+  
+  .hero {
+    font-size: 150%;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .navbar {
+    color: rgb(255, 255, 255); /* Set the text color to white */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  .container {
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: -5%;
+    text-align: left;
+  }
+  .container1 {
+    padding: 20px;
+    margin-left: 4%;
+    margin-top: 6%;
+    
+    text-align: left;
+  }
+
+
+  h2{
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 60px;
+  }
+
+  p{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+  }
+  
+  form {
+    display: flex;
+    text-align: left;
+    color: white;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+  }
+  .form-row {
+    display: flex;
+    margin-left: -30%;
+    margin-right: -30%;
+    justify-content: space-between;
+    gap: 2%;
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  .form-row3 {
+    display: flex;
+    margin-left: -30%;
+    margin-right: -30%;
+    justify-content: space-between;
+    gap: 1%;
+  }
+  .custom-select {
+    width: 100%; 
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    height: 12px; 
+}
+
+  .form-group {
+    width: 48%;
+  }
+  input[type="text"],
+  input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .button {
+    background-color: rgb(22, 22, 170);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 150%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 6%;
+  }
+  .button:hover {
+    background-color: white;
+    color: rgb(22, 22, 170);
+  }
+
+  

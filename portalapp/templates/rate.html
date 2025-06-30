@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Airlines - Contact Us</title>
+    <link rel="stylesheet" href="style_rate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Skyline Airlines</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any queries or assistance.</p>
+                <button class="btn">Send Us a Message</button>
+            </div>
+        </section>
+
+        <section>
+            <h2 class = "rating_text">Enjoying the Website? Dont forget to rate us!!</h2>
+            <div class="rating">
+                <input type="radio" name="star" id="star1" value="5"><label for="star1">★</label>
+                <input type="radio" name="star" id="star2" value="4"><label for="star2">★</label>
+                <input type="radio" name="star" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="star" id="star4" value="2"><label for="star4">★</label>
+                <input type="radio" name="star" id="star5" value="1"><label for="star5">★</label>
+            </div>
+            <div id="thank-you-message">Thank you for your rating!</div>
+            <div id="improve-message">We are sorry to hear that. Please let us know how we can improve.</div>
+            <div id = "delighted"> We are Delighted to hear that.</div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+        <section class="contact-info">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>+1-800-555-1212</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@skyline.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>123 Main Street, Cityville, USA</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section>
+            <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </section>
+            <p>&copy; 2023 Skyline Airlines. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src = "rating.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Airlines - Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'contact_style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">SkyLine</a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container1">
+                <h1><b>Contact Us</b></h1>
+                <p><b>Get in touch with us for any queries or assistance.</b></p>
+                <button class="btn">Send Us a Message</button>
+            </div>
+        </section>
+
+        <section class = "rating_class">
+            <h2 class = "rating_text">Enjoying the Website? Dont forget to rate us!!</h2>
+            <div class="rating">
+                <input type="radio" name="star" id="star1" value="5"><label for="star1">★</label>
+                <input type="radio" name="star" id="star2" value="4"><label for="star2">★</label>
+                <input type="radio" name="star" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="star" id="star4" value="2"><label for="star4">★</label>
+                <input type="radio" name="star" id="star5" value="1"><label for="star5">★</label>
+            </div>
+            <div id="thank-you-message">Thank you for your rating!</div>
+            <div id="improve-message">We are sorry to hear that. Please let us know how we can improve.</div>
+            <div id = "delighted"> We are Delighted to hear that.</div>
+        </section>
+
+        <section class="contact-form">
+            
+            <div class="container">
+                
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <label>
+                        <input type="checkbox" name="notify_updates" value="yes">
+                        Notify me about updates
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="subscribe_newsletters" value="yes">
+                        Subscribe to our newsletters
+                    </label>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section class="contact-info">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <div class = "contact_info">
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>+1-800-555-1212</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@skyline.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>3/5 San Francisco, USA</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{% static 'contact.js' %}"></script>
+</body>
+</html>

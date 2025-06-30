@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+
+<body>
+<div class="container">
+  <h2>Login to Your Account</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="pass" required>
+            <label for="">Don't have an account yet?  <a href="{% url 'signup1' %}">  Sign Up here.</a></label>
+            {% if error %}
+            <div class="error">{{ error }}</div>
+            {% endif %}
+            <input type="submit" value="Log In">
+        </form>
+</div>
+</body>
+</html>

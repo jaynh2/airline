@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Status</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'flightstatusstyle.css' %}"> <!-- custom stylesheet -->
+</head>
+<body>
+
+<div class="container">
+  <h1><b>Check Flight Status</b></h1>
+  <p><b>With SkyLine's flight tracker, you can now track the live status of domestic and international flights. Just enter a few details such as PNR number, flight number, travel date and others and get the flight status on the go from anywhere.</p></b>
+
+  <p><b>Enter flight details to check your flight status.</b></p>
+
+  <div>
+    <label for="departing"><b>Departing</b></label>
+    <input type="text" id="departing" name="departing" placeholder="City or Airport">
+  </div>
+  <br>
+  <div>
+    <label for="arriving"><b>Arriving</b></label>
+    <input type="text" id="arriving" name="arriving" placeholder="City or Airport">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="travel-dates"><b>Travel Dates</b></label>
+    <input type="date" id="travel-dates" class="form-control" placeholder="Enter Date">
+</div>
+
+  <div>
+    <label for="pnr"><b>PNR/Booking Ref.</b></label>
+    <input type="text" id="pnr" name="pnr" placeholder="PNR or Booking Reference">
+  </div>
+  <br>
+  <button type="submit"><b>Search Flight</b></button>
+</div>
+
+</body>
+</html>
